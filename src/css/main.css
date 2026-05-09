@@ -1,8 +1,8 @@
-@import '/src/css/styles/variables.css';
-@import '/src/css/styles/global.css';
-@import '/src/css/styles/index.css';
+@import './styles/variables.css';
+@import './styles/global.css';
+@import './styles/index.css';
 
-@import '/src/css/styles/header.css';
-@import '/src/css/styles/footer.css';
+@import './styles/header.css';
+@import './styles/footer.css';
 
-@import '/src/css/styles/home.css';
+@import './styles/home.css';
