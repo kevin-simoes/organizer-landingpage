@@ -11,6 +11,16 @@ header span {
     align-items: center;
 }
 
+header span a:hover {
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+header span a:focus {
+    color: var(--primary-color);
+    outline: none;
+}
+
 header img {
     width: 50px;
 }
@@ -24,4 +34,14 @@ header img {
     justify-content: center;
     align-items: center;
     gap: var(--spacing-small);
+}
+
+.button-link:hover {
+    background-color: var(--card-border-color2);
+    color: var(--background-color);
+}
+
+.button-link:focus {
+    background-color: var(--card-border-color2);
+    color: var(--background-color);
 }

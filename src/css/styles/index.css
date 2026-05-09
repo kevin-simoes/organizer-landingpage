@@ -33,6 +33,18 @@
     gap: var(--spacing-small);
 }
 
+.hero-leftside button:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.hero-leftside button:focus {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    outline: none;  
+}
+
 .highlight {
     color: var(--primary-color);
 }
@@ -58,6 +70,13 @@
     width: 60%;
 }
 
+.about-big-card:hover {
+    background-color: var(--card-color2);
+    border-color: var(--card-border-color2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 .about-big-card div {
     max-width: 600px;
     display: flex;
@@ -77,15 +96,20 @@
 
 .about-small-card {
     flex: 1;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
     background-color: var(--card-color1);
     padding: var(--spacing-medium);
     border-radius: var(--border-radius);
     border: 1.5px solid var(--card-border-color1);
+}
+
+.about-small-card:hover {
+    background-color: var(--card-color2);
+    border-color: var(--card-border-color2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .about-small-card img {
@@ -125,6 +149,13 @@
     padding: var(--spacing-medium);
     border-radius: var(--border-radius);
     border: 1.5px solid var(--card-border-color1);
+}
+
+.benefits-card:hover {
+    background-color: var(--card-color2);
+    border-color: var(--card-border-color2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /*Estilo do tutorial*/
