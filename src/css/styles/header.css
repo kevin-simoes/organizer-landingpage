@@ -34,6 +34,7 @@ header img {
     justify-content: center;
     align-items: center;
     gap: var(--spacing-small);
+    cursor: pointer;
 }
 
 .button-link:hover {
