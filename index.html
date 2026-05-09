@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="icon" href="src/assets/imgs/organizer_icon.png"/>
+    <meta name="icon" href="src/assets/imgs/organizer_icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/main.css">
     <title>Organizer</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header>
-      <span>
-        <img src="src/assets/imgs/organizer_icon.png" alt="Organizer Icon" />
-        <h3>Organizer</h3>
-      </span>
-      <span>
-        <a href="#about">Sobre</a>
-        <a href="#benefits">Benefícios</a>
-        <a href="#tutorial">Como funciona</a>
-      </span>
-      <span>
-        <a href="#" class="button-link">Login</a>
-      </span>
+        <span>
+            <img src="src/assets/imgs/organizer_icon.png" alt="Organizer Icon" />
+            <h3>Organizer</h3>
+        </span>
+        <span>
+            <a href="#about">Sobre</a>
+            <a href="#benefits">Benefícios</a>
+            <a href="#tutorial">Como funciona</a>
+            <a href="#login-invite">Junte se a nós</a>
+        </span>
+        <span>
+            <a href="src/" class="button-link">Login</a>
+        </span>
     </header>
     <main class="main-content">
         <main class="hero-content">
             <div class="hero-leftside">
                 <h1>Suas anotações <span class="highlight">Organizadas</span> com um clique!</h1>
-                <p>Capture fotos de lousas, folhas de caderno e anotações. Organizamos tudo automaticamente e encontra o que você precisa em segundos.</p>
+                <p>Capture fotos de lousas, folhas de caderno e anotações. Organizamos tudo automaticamente e encontra o
+                    que você precisa em segundos.</p>
                 <button>Conhecer Mais
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-arrow-right-icon lucide-arrow-right">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
                 </button>
             </div class="hero-rightside">
-                 <img src="src/assets/imgs/hero_image.png" alt="Hero Image" />
+            <img src="src/assets/imgs/hero_image.png" alt="Hero Image" />
         </main>
         <main class="about-content" id="about">
             <h2>Continue estudando sem imprevistos.</h2>
@@ -42,22 +51,44 @@
             <div class="about-big-card">
                 <div class="about-big-card-leftside">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 55 55" fill="none">
-                        <path d="M27.5001 11.4584C27.5028 10.5418 27.3221 9.63389 26.9688 8.78812C26.6155 7.94234 26.0967 7.17576 25.4428 6.53345C24.7889 5.89114 24.0131 5.38608 23.1611 5.04796C22.3092 4.70984 21.3982 4.5455 20.4818 4.5646C19.5654 4.5837 18.6621 4.78586 17.825 5.15919C16.9878 5.53251 16.2338 6.06946 15.6072 6.73846C14.9807 7.40746 14.4942 8.195 14.1764 9.05476C13.8587 9.91452 13.716 10.8291 13.7569 11.7448C12.4099 12.0912 11.1593 12.7395 10.1 13.6407C9.04059 14.542 8.20019 15.6725 7.64241 16.9466C7.08463 18.2207 6.82409 19.605 6.88053 20.9947C6.93697 22.3844 7.30891 23.7431 7.96818 24.9677C6.80901 25.9095 5.89749 27.1201 5.31292 28.4945C4.72834 29.8688 4.48842 31.3651 4.61402 32.8533C4.73961 34.3415 5.22693 35.7765 6.03357 37.0334C6.84021 38.2903 7.94175 39.3311 9.24235 40.0652C9.08174 41.3079 9.17759 42.5702 9.52397 43.7744C9.87035 44.9785 10.4599 46.0988 11.2562 47.0662C12.0526 48.0335 13.0387 48.8274 14.1539 49.3986C15.269 49.9699 16.4895 50.3065 17.7398 50.3877C18.9901 50.4688 20.2438 50.2928 21.4234 49.8704C22.6031 49.448 23.6836 48.7883 24.5983 47.932C25.5129 47.0757 26.2423 46.0409 26.7414 44.8916C27.2405 43.7424 27.4987 42.503 27.5001 41.25V11.4584Z" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M20.625 29.7917C22.549 29.1148 24.2291 27.8827 25.4528 26.2511C26.6765 24.6194 27.389 22.6615 27.5 20.625" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M13.7568 11.7448C13.8022 12.8533 14.1151 13.9344 14.6689 14.8958" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7.96802 24.97C8.38725 24.6286 8.83588 24.3249 9.30864 24.0625" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M13.7499 41.25C12.1705 41.2507 10.6178 40.8434 9.24219 40.0675" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M27.5 29.7916H36.6667" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M27.5 41.25H41.25C42.4656 41.25 43.6314 41.7329 44.4909 42.5924C45.3504 43.452 45.8333 44.6178 45.8333 45.8333V48.125" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M27.5 18.3334H45.8333" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M36.6667 18.3333V11.4583C36.6667 10.2428 37.1496 9.07697 38.0092 8.21743C38.8687 7.35789 40.0345 6.875 41.2501 6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M36.6666 30.9375C37.2994 30.9375 37.8124 30.4245 37.8124 29.7917C37.8124 29.1589 37.2994 28.6459 36.6666 28.6459C36.0338 28.6459 35.5208 29.1589 35.5208 29.7917C35.5208 30.4245 36.0338 30.9375 36.6666 30.9375Z" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M41.2501 8.02079C41.8829 8.02079 42.3959 7.50779 42.3959 6.87496C42.3959 6.24213 41.8829 5.72913 41.2501 5.72913C40.6173 5.72913 40.1042 6.24213 40.1042 6.87496C40.1042 7.50779 40.6173 8.02079 41.2501 8.02079Z" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M45.8333 49.2708C46.4662 49.2708 46.9792 48.7578 46.9792 48.125C46.9792 47.4921 46.4662 46.9791 45.8333 46.9791C45.2005 46.9791 44.6875 47.4921 44.6875 48.125C44.6875 48.7578 45.2005 49.2708 45.8333 49.2708Z" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M45.8333 19.4792C46.4662 19.4792 46.9792 18.9662 46.9792 18.3333C46.9792 17.7005 46.4662 17.1875 45.8333 17.1875C45.2005 17.1875 44.6875 17.7005 44.6875 18.3333C44.6875 18.9662 45.2005 19.4792 45.8333 19.4792Z" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
+                        <path
+                            d="M27.5001 11.4584C27.5028 10.5418 27.3221 9.63389 26.9688 8.78812C26.6155 7.94234 26.0967 7.17576 25.4428 6.53345C24.7889 5.89114 24.0131 5.38608 23.1611 5.04796C22.3092 4.70984 21.3982 4.5455 20.4818 4.5646C19.5654 4.5837 18.6621 4.78586 17.825 5.15919C16.9878 5.53251 16.2338 6.06946 15.6072 6.73846C14.9807 7.40746 14.4942 8.195 14.1764 9.05476C13.8587 9.91452 13.716 10.8291 13.7569 11.7448C12.4099 12.0912 11.1593 12.7395 10.1 13.6407C9.04059 14.542 8.20019 15.6725 7.64241 16.9466C7.08463 18.2207 6.82409 19.605 6.88053 20.9947C6.93697 22.3844 7.30891 23.7431 7.96818 24.9677C6.80901 25.9095 5.89749 27.1201 5.31292 28.4945C4.72834 29.8688 4.48842 31.3651 4.61402 32.8533C4.73961 34.3415 5.22693 35.7765 6.03357 37.0334C6.84021 38.2903 7.94175 39.3311 9.24235 40.0652C9.08174 41.3079 9.17759 42.5702 9.52397 43.7744C9.87035 44.9785 10.4599 46.0988 11.2562 47.0662C12.0526 48.0335 13.0387 48.8274 14.1539 49.3986C15.269 49.9699 16.4895 50.3065 17.7398 50.3877C18.9901 50.4688 20.2438 50.2928 21.4234 49.8704C22.6031 49.448 23.6836 48.7883 24.5983 47.932C25.5129 47.0757 26.2423 46.0409 26.7414 44.8916C27.2405 43.7424 27.4987 42.503 27.5001 41.25V11.4584Z"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M20.625 29.7917C22.549 29.1148 24.2291 27.8827 25.4528 26.2511C26.6765 24.6194 27.389 22.6615 27.5 20.625"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.7568 11.7448C13.8022 12.8533 14.1151 13.9344 14.6689 14.8958" stroke="#0B4DE5"
+                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M7.96802 24.97C8.38725 24.6286 8.83588 24.3249 9.30864 24.0625" stroke="#0B4DE5"
+                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M13.7499 41.25C12.1705 41.2507 10.6178 40.8434 9.24219 40.0675" stroke="#0B4DE5"
+                            stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M27.5 29.7916H36.6667" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M27.5 41.25H41.25C42.4656 41.25 43.6314 41.7329 44.4909 42.5924C45.3504 43.452 45.8333 44.6178 45.8333 45.8333V48.125"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M27.5 18.3334H45.8333" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path
+                            d="M36.6667 18.3333V11.4583C36.6667 10.2428 37.1496 9.07697 38.0092 8.21743C38.8687 7.35789 40.0345 6.875 41.2501 6.875"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M36.6666 30.9375C37.2994 30.9375 37.8124 30.4245 37.8124 29.7917C37.8124 29.1589 37.2994 28.6459 36.6666 28.6459C36.0338 28.6459 35.5208 29.1589 35.5208 29.7917C35.5208 30.4245 36.0338 30.9375 36.6666 30.9375Z"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M41.2501 8.02079C41.8829 8.02079 42.3959 7.50779 42.3959 6.87496C42.3959 6.24213 41.8829 5.72913 41.2501 5.72913C40.6173 5.72913 40.1042 6.24213 40.1042 6.87496C40.1042 7.50779 40.6173 8.02079 41.2501 8.02079Z"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M45.8333 49.2708C46.4662 49.2708 46.9792 48.7578 46.9792 48.125C46.9792 47.4921 46.4662 46.9791 45.8333 46.9791C45.2005 46.9791 44.6875 47.4921 44.6875 48.125C44.6875 48.7578 45.2005 49.2708 45.8333 49.2708Z"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M45.8333 19.4792C46.4662 19.4792 46.9792 18.9662 46.9792 18.3333C46.9792 17.7005 46.4662 17.1875 45.8333 17.1875C45.2005 17.1875 44.6875 17.7005 44.6875 18.3333C44.6875 18.9662 45.2005 19.4792 45.8333 19.4792Z"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
                     <h3>Organização inteligente</h3>
-                    <p>O aplicativo identifica e separa automaticamente fotos de caderno, lousa e documentos, deixando tudo mais organizado e fácil de encontrar.</p>
+                    <p>O aplicativo identifica e separa automaticamente fotos de caderno, lousa e documentos, deixando
+                        tudo mais organizado e fácil de encontrar.</p>
                 </div>
                 <img src="src/assets/imgs/about-big-card-image.png" alt="About Big Card Image" />
             </div>
@@ -65,11 +96,19 @@
                 <div class="about-small-card">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 55 55" fill="none">
-                            <path d="M27.5 34.375V45.8333C27.5 45.8333 34.4437 44.5729 36.6667 41.25C39.1417 37.5375 36.6667 29.7916 36.6667 29.7916" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M10.3126 37.8125C6.87508 40.7 5.72925 49.2708 5.72925 49.2708C5.72925 49.2708 14.3001 48.125 17.1876 44.6875C18.8147 42.7625 18.7917 39.8063 16.9813 38.0188C16.0906 37.1686 14.9172 36.6773 13.6864 36.6392C12.4557 36.6012 11.2542 37.019 10.3126 37.8125Z" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20.625 27.5C21.8445 24.3362 23.38 21.3035 25.2083 18.4479C27.8785 14.1785 31.5966 10.6632 36.009 8.23646C40.4213 5.80968 45.3811 4.5521 50.4167 4.58333C50.4167 10.8167 48.6292 21.7708 36.6667 29.7917C33.7717 31.6214 30.7008 33.1568 27.5 34.375L20.625 27.5Z" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M20.6251 27.5001H9.16675C9.16675 27.5001 10.4272 20.5563 13.7501 18.3334C17.4626 15.8584 25.2084 18.448 25.2084 18.448" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <path
+                                d="M27.5 34.375V45.8333C27.5 45.8333 34.4437 44.5729 36.6667 41.25C39.1417 37.5375 36.6667 29.7916 36.6667 29.7916"
+                                stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10.3126 37.8125C6.87508 40.7 5.72925 49.2708 5.72925 49.2708C5.72925 49.2708 14.3001 48.125 17.1876 44.6875C18.8147 42.7625 18.7917 39.8063 16.9813 38.0188C16.0906 37.1686 14.9172 36.6773 13.6864 36.6392C12.4557 36.6012 11.2542 37.019 10.3126 37.8125Z"
+                                stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M20.625 27.5C21.8445 24.3362 23.38 21.3035 25.2083 18.4479C27.8785 14.1785 31.5966 10.6632 36.009 8.23646C40.4213 5.80968 45.3811 4.5521 50.4167 4.58333C50.4167 10.8167 48.6292 21.7708 36.6667 29.7917C33.7717 31.6214 30.7008 33.1568 27.5 34.375L20.625 27.5Z"
+                                stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M20.6251 27.5001H9.16675C9.16675 27.5001 10.4272 20.5563 13.7501 18.3334C17.4626 15.8584 25.2084 18.448 25.2084 18.448"
+                                stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                         <h3>Proatividade nos estudos</h3>
                         <p>Facilita encontrar conteúdos rapidamente</p>
                     </div>
@@ -78,12 +117,18 @@
                 <div class="about-small-card">
                     <div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 55 55" fill="none">
-                            <path d="M48.125 11.4584H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M22.9167 27.5H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M22.9167 43.5416H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M38.9583 41.25C42.7552 41.25 45.8333 38.172 45.8333 34.375C45.8333 30.578 42.7552 27.5 38.9583 27.5C35.1613 27.5 32.0833 30.578 32.0833 34.375C32.0833 38.172 35.1613 41.25 38.9583 41.25Z" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M48.1249 43.5417L43.7708 39.1875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
+                            <path d="M48.125 11.4584H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22.9167 27.5H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M22.9167 43.5416H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M38.9583 41.25C42.7552 41.25 45.8333 38.172 45.8333 34.375C45.8333 30.578 42.7552 27.5 38.9583 27.5C35.1613 27.5 32.0833 30.578 32.0833 34.375C32.0833 38.172 35.1613 41.25 38.9583 41.25Z"
+                                stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M48.1249 43.5417L43.7708 39.1875" stroke="#0B4DE5" stroke-width="4"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
                         <h3>Melhor Qualidade e Acesso às Anotações</h3>
                     </div>
                     <img src="src/assets/imgs/about-small-card-image.png" alt="About Big Card Image" />
@@ -91,62 +136,96 @@
             </div>
         </main>
         <main class="benefits-content" id="benefits">
-                <h2>Benefícios ao ser um <span class="highlight">Organizer.</span></h2>
-                
-                <div class="benefits-cards">
-                    <div class="benefits-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
-                            <path d="M29.5 14.7501V29.5001L39.3333 34.4167M54.0833 29.5001C54.0833 43.0771 43.077 54.0834 29.5 54.0834C15.923 54.0834 4.91663 43.0771 4.91663 29.5001C4.91663 15.9231 15.923 4.91675 29.5 4.91675C43.077 4.91675 54.0833 15.9231 54.0833 29.5001Z" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        <h3>Organização Inteligente</h3>
-                        <p>O aplicativo identifica e separa automaticamente fotos de caderno, lousa e documentos, deixando tudo mais organizado e fácil de encontrar.</p>
-                    </div>
-                    <div class="benefits-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 59 59" fill="none">
-                            <path d="M12.2917 51.625C10.9396 51.625 9.77188 51.1538 8.78854 50.2115C7.84618 49.2281 7.375 48.0604 7.375 46.7083V12.2917C7.375 10.9396 7.84618 9.79236 8.78854 8.85C9.77188 7.86667 10.9396 7.375 12.2917 7.375H46.7083C48.0604 7.375 49.2076 7.86667 50.15 8.85C51.1333 9.79236 51.625 10.9396 51.625 12.2917V46.7083C51.625 48.0604 51.1333 49.2281 50.15 50.2115C49.2076 51.1538 48.0604 51.625 46.7083 51.625H12.2917ZM12.2917 46.7083H46.7083V12.2917H12.2917V46.7083ZM14.75 41.7917H44.25L35.0313 29.5L27.6563 39.3333L22.125 31.9583L14.75 41.7917ZM12.2917 46.7083V12.2917V46.7083Z" fill="#0B4DE5"/>
-                            </svg>
-                        <h3>Proatividade nos Estudos</h3>
-                        <p>Facilita encontrar conteúdos rapidamente, permitindo que você se concentre mais nos estudos e menos na busca por materiais.</p>
-                    </div>
-                    <div class="benefits-card">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
-                            <path d="M49.1666 22.1251L31.9583 4.91675H14.7499C13.4459 4.91675 12.1954 5.43475 11.2733 6.35681C10.3513 7.27886 9.83325 8.52943 9.83325 9.83342V49.1668C9.83325 50.4707 10.3513 51.7213 11.2733 52.6434C12.1954 53.5654 13.4459 54.0834 14.7499 54.0834H44.2499C45.5539 54.0834 46.8045 53.5654 47.7265 52.6434C48.6486 51.7213 49.1666 50.4707 49.1666 49.1668V22.1251ZM31.9583 4.91675V22.1251H49.1666" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        <h3>Melhor Qualidade e Acesso às Anotações</h3>
-                        <p>Melhora a qualidade das suas anotações, tornando-as mais legíveis e acessíveis a qualquer momento, em qualquer lugar.</p>
-                    </div>
+            <h2>Benefícios ao ser um <span class="highlight">Organizer.</span></h2>
+
+            <div class="benefits-cards">
+                <div class="benefits-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
+                        <path
+                            d="M29.5 14.7501V29.5001L39.3333 34.4167M54.0833 29.5001C54.0833 43.0771 43.077 54.0834 29.5 54.0834C15.923 54.0834 4.91663 43.0771 4.91663 29.5001C4.91663 15.9231 15.923 4.91675 29.5 4.91675C43.077 4.91675 54.0833 15.9231 54.0833 29.5001Z"
+                            stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3>Organização Inteligente</h3>
+                    <p>O aplicativo identifica e separa automaticamente fotos de caderno, lousa e documentos, deixando
+                        tudo mais organizado e fácil de encontrar.</p>
                 </div>
+                <div class="benefits-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 59 59" fill="none">
+                        <path
+                            d="M12.2917 51.625C10.9396 51.625 9.77188 51.1538 8.78854 50.2115C7.84618 49.2281 7.375 48.0604 7.375 46.7083V12.2917C7.375 10.9396 7.84618 9.79236 8.78854 8.85C9.77188 7.86667 10.9396 7.375 12.2917 7.375H46.7083C48.0604 7.375 49.2076 7.86667 50.15 8.85C51.1333 9.79236 51.625 10.9396 51.625 12.2917V46.7083C51.625 48.0604 51.1333 49.2281 50.15 50.2115C49.2076 51.1538 48.0604 51.625 46.7083 51.625H12.2917ZM12.2917 46.7083H46.7083V12.2917H12.2917V46.7083ZM14.75 41.7917H44.25L35.0313 29.5L27.6563 39.3333L22.125 31.9583L14.75 41.7917ZM12.2917 46.7083V12.2917V46.7083Z"
+                            fill="#0B4DE5" />
+                    </svg>
+                    <h3>Proatividade nos Estudos</h3>
+                    <p>Facilita encontrar conteúdos rapidamente, permitindo que você se concentre mais nos estudos e
+                        menos na busca por materiais.</p>
+                </div>
+                <div class="benefits-card">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
+                        <path
+                            d="M49.1666 22.1251L31.9583 4.91675H14.7499C13.4459 4.91675 12.1954 5.43475 11.2733 6.35681C10.3513 7.27886 9.83325 8.52943 9.83325 9.83342V49.1668C9.83325 50.4707 10.3513 51.7213 11.2733 52.6434C12.1954 53.5654 13.4459 54.0834 14.7499 54.0834H44.2499C45.5539 54.0834 46.8045 53.5654 47.7265 52.6434C48.6486 51.7213 49.1666 50.4707 49.1666 49.1668V22.1251ZM31.9583 4.91675V22.1251H49.1666"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <h3>Melhor Qualidade e Acesso às Anotações</h3>
+                    <p>Melhora a qualidade das suas anotações, tornando-as mais legíveis e acessíveis a qualquer
+                        momento, em qualquer lugar.</p>
+                </div>
+            </div>
         </main>
         <main class="tutorial-content" id="tutorial">
-                <h2>Como funciona o <span class="highlight">Organizer</span></h2>
-                <div class="tutorial-cards">
-                    <div class="tutorial-card">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
-                                <path d="M29.0753 19.3834V9.69165H19.3835" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M43.6128 19.3835H14.5375C11.8612 19.3835 9.69165 21.5531 9.69165 24.2294V43.613C9.69165 46.2893 11.8612 48.4588 14.5375 48.4588H43.6128C46.2892 48.4588 48.4587 46.2893 48.4587 43.613V24.2294C48.4587 21.5531 46.2892 19.3835 43.6128 19.3835Z" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M4.84595 33.9211H9.69183" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M48.4587 33.9211H53.3046" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M36.3442 31.4983V36.3442" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M21.8064 31.4983V36.3442" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            <h3>Primeiro Contato</h3>
-                            <p>Ao entrar pela primeira vez, o Organizer fará perguntas para conhecer o seu usuário, partindo desse contexto para identificar quais fotos deverá organizar para cada pasta, conforme a preferência do usuário.</p>
-                        </div>
-                        <img src="src/assets/imgs/organizer_icon.png" />
+            <h2>Como funciona o <span class="highlight">Organizer</span></h2>
+            <div class="tutorial-cards">
+                <div class="tutorial-card">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
+                            <path d="M29.0753 19.3834V9.69165H19.3835" stroke="#0B4DE5" stroke-width="5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M43.6128 19.3835H14.5375C11.8612 19.3835 9.69165 21.5531 9.69165 24.2294V43.613C9.69165 46.2893 11.8612 48.4588 14.5375 48.4588H43.6128C46.2892 48.4588 48.4587 46.2893 48.4587 43.613V24.2294C48.4587 21.5531 46.2892 19.3835 43.6128 19.3835Z"
+                                stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M4.84595 33.9211H9.69183" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M48.4587 33.9211H53.3046" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M36.3442 31.4983V36.3442" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M21.8064 31.4983V36.3442" stroke="#0B4DE5" stroke-width="5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <h3>Primeiro Contato</h3>
+                        <p>Ao entrar pela primeira vez, o Organizer fará perguntas para conhecer o seu usuário, partindo
+                            desse contexto para identificar quais fotos deverá organizar para cada pasta, conforme a
+                            preferência do usuário.</p>
                     </div>
-                    <div class="tutorial-card">
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
-                                <path d="M54.0834 46.7083C54.0834 48.0123 53.5654 49.2629 52.6434 50.1849C51.7213 51.107 50.4707 51.625 49.1667 51.625H9.83341C8.52943 51.625 7.27886 51.107 6.35681 50.1849C5.43475 49.2629 4.91675 48.0123 4.91675 46.7083V12.2917C4.91675 10.9877 5.43475 9.73711 6.35681 8.81506C7.27886 7.893 8.52943 7.375 9.83341 7.375H22.1251L27.0417 14.75H49.1667C50.4707 14.75 51.7213 15.268 52.6434 16.1901C53.5654 17.1121 54.0834 18.3627 54.0834 19.6667V46.7083Z" stroke="#0B4DE5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            <h3>Organização por temas</h3>
-                            <p>Diferente da galeria de fotos, a do Organizer é voltada 100% a fotos voltadas a estudo/trabalho, por conta disso o aplicativo separa as fotos por temas, sendo ajustável para atender as necessidades do usuário.</p>
-                        </div>
-                        <img src="src/assets/imgs/tutorial-image.png" />
-                    </div>
+                    <!-- <img src="src/assets/imgs/organizer_icon.png" /> -->
                 </div>
+                <div class="tutorial-card">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
+                            <path
+                                d="M54.0834 46.7083C54.0834 48.0123 53.5654 49.2629 52.6434 50.1849C51.7213 51.107 50.4707 51.625 49.1667 51.625H9.83341C8.52943 51.625 7.27886 51.107 6.35681 50.1849C5.43475 49.2629 4.91675 48.0123 4.91675 46.7083V12.2917C4.91675 10.9877 5.43475 9.73711 6.35681 8.81506C7.27886 7.893 8.52943 7.375 9.83341 7.375H22.1251L27.0417 14.75H49.1667C50.4707 14.75 51.7213 15.268 52.6434 16.1901C53.5654 17.1121 54.0834 18.3627 54.0834 19.6667V46.7083Z"
+                                stroke="#0B4DE5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <h3>Organização por temas</h3>
+                        <p>Diferente da galeria de fotos, a do Organizer é voltada 100% a fotos voltadas a
+                            estudo/trabalho, por conta disso o aplicativo separa as fotos por temas, sendo ajustável
+                            para atender as necessidades do usuário.</p>
+                    </div>
+                    <img src="src/assets/imgs/tutorial-image.png" />
+                </div>
+            </div>
+        </main>
+        <main class="login-invite" id="login-invite">
+            <div class="login-invite-content">
+                <img src="src/assets/imgs/organizer_icon.png" />
+                <h2>Pronto para organizar suas anotações?</h2>
+                <p>Faça o login na landing page do Organizer para ser informado quando o aplicativo ficar disponível.</p>
+                <button class="button-link">Registrar</button>
+            </div>
         </main>
     </main>
-  </body>
+    <footer>
+        @2026 IRIS. Todos os direitos reservados.
+    </footer>
+</body>
+
 </html>
