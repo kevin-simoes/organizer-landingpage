@@ -1,0 +1,189 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+/*Estilo do hero*/
+.hero-content {
+    display: flex;
+    flex-direction: row;
+    padding-inline: 5rem;
+    justify-content: space-between;
+    gap: var(--spacing-medium);
+}
+
+.hero-leftside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-medium);
+}
+
+.hero-leftside button {
+    background-color: transparent;
+    border-radius: 100px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: var(--spacing-small);
+    width: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-small);
+}
+
+.highlight{
+    color: var(--primary-color);
+}
+
+/*Estilo do about*/
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding-inline: var(--spacing-large);
+}
+
+.about-big-card {
+    display: flex;
+    flex-direction: row;
+    gap: var(--spacing-medium);
+    background-color: var(--card-color1);
+    padding: 16px 16px 0px 16px;   
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--card-border-color1);
+    width: 60%;
+}
+
+.about-big-card div {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+}
+
+.about-big-card img {
+    width: 300px;
+}
+
+.about-small-cards {
+    display: flex;
+    gap: 30px;
+    width: 60%;
+}
+
+.about-small-card {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--card-color1);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--card-border-color1);
+}
+
+.about-small-card img {
+    width: 166px;
+}
+
+.about-small-card:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    padding: 16px 0px 0px 16px;  
+}
+
+/*Estilo do benefits*/
+
+.benefits-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-large);
+    background-color: var(--card-color1);
+}
+
+.benefits-cards {
+    display: flex;
+    gap: var(--spacing-medium);
+    width: 80%;
+}
+
+.benefits-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    background-color: var(--background-color);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--card-border-color1);
+}
+
+/*Estilo do tutorial*/
+
+.tutorial-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-large);
+}
+
+.tutorial-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+    width: 60%;
+}
+
+.tutorial-card {
+    display: flex;
+    flex: 1;
+    background-color: var(--card-color2);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--card-border-color2);
+}
+
+.tutorial-card div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: fit-content;
+    gap: var(--spacing-medium);
+}
+
+.tutorial-card img {
+    width: 200px;
+}
+
+.tutorial-card:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    flex: 1;
+    background-color: var(--card-color1);
+    padding: 16px 16px 0px 16px;
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--card-border-color1);
+}
+
+.tutorial-card:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: end;
+    width: fit-content;
+    gap: var(--spacing-medium);
+}
+
+.tutorial-card:nth-child(2) img {
+    width: 196px;
+}

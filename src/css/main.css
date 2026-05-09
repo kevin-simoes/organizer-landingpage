@@ -1,0 +1,8 @@
+@import '/src/css/styles/variables.css';
+@import '/src/css/styles/global.css';
+@import '/src/css/styles/index.css';
+
+@import '/src/css/styles/header.css';
+@import '/src/css/styles/footer.css';
+
+@import '/src/css/styles/home.css';
