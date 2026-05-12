@@ -14,18 +14,26 @@
 
 <body>
     <header>
-        <span>
-            <img src="src/assets/imgs/organizer_icon.png" alt="Organizer Icon" />
-            <h3>Organizer</h3>
-        </span>
-        <span>
+        <div>
+            <span>
+                <img src="src/assets/imgs/organizer_icon.png" alt="Organizer Icon" />
+                <h3>Organizer</h3>
+            </span>
+            <span class="header-laptop">
+                <a href="#about">Sobre</a>
+                <a href="#benefits">Benefícios</a>
+                <a href="#tutorial">Como funciona</a>
+                <a href="#login-invite">Junte se a nós</a>
+            </span>
+            <span>
+                <a href="src/pages/form.html" class="button-link">Pré-cadastro</a>
+            </span>
+        </div>
+        <span class="header-mobile">
             <a href="#about">Sobre</a>
             <a href="#benefits">Benefícios</a>
             <a href="#tutorial">Como funciona</a>
             <a href="#login-invite">Junte se a nós</a>
-        </span>
-        <span>
-            <a href="src/pages/form.html" class="button-link">Pré-cadastro</a>
         </span>
     </header>
     <main class="main-content">
@@ -44,7 +52,7 @@
                     </svg>
                 </button>
             </a>
-            </div class="hero-rightside">
+        </div>
             <img src="src/assets/imgs/hero_image.png" alt="Hero Image" />
         </main>
         <main class="about-content" id="about">
@@ -117,35 +125,38 @@
                     <img src="src/assets/imgs/filter.png" alt="About Big Card Image" />
                 </div>
                 <div class="about-small-card">
-                    <div>
+                    <div class="about-small-card-upside">
                         <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 55 55" fill="none">
                             <path d="M48.125 11.4584H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                            stroke-linejoin="round" />
                             <path d="M22.9167 27.5H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                            stroke-linejoin="round" />
                             <path d="M22.9167 43.5416H6.875" stroke="#0B4DE5" stroke-width="4" stroke-linecap="round"
-                                stroke-linejoin="round" />
+                            stroke-linejoin="round" />
                             <path
-                                d="M38.9583 41.25C42.7552 41.25 45.8333 38.172 45.8333 34.375C45.8333 30.578 42.7552 27.5 38.9583 27.5C35.1613 27.5 32.0833 30.578 32.0833 34.375C32.0833 38.172 35.1613 41.25 38.9583 41.25Z"
-                                stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                            d="M38.9583 41.25C42.7552 41.25 45.8333 38.172 45.8333 34.375C45.8333 30.578 42.7552 27.5 38.9583 27.5C35.1613 27.5 32.0833 30.578 32.0833 34.375C32.0833 38.172 35.1613 41.25 38.9583 41.25Z"
+                            stroke="#0B4DE5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
                             <path d="M48.1249 43.5417L43.7708 39.1875" stroke="#0B4DE5" stroke-width="4"
-                                stroke-linecap="round" stroke-linejoin="round" />
+                            stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                         <h3>Melhor Qualidade e Acesso às Anotações</h3>
+                        <p>Facilita encontrar conteúdos rapidamente</p>
                     </div>
-                    <img src="src/assets/imgs/about-small-card-image.png" alt="About Big Card Image" />
+                    <div class="about-small-card-image">
+                        <img src="src/assets/imgs/about-small-card-image.png" alt="About Big Card Image" />
+                    </div>
                 </div>
             </div>
         </main>
         <main class="benefits-content" id="benefits">
             <h2>Benefícios ao ser um <span class="highlight">Organizer.</span></h2>
-
+            
             <div class="benefits-cards">
                 <div class="benefits-card">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 59 59" fill="none">
                         <path
-                            d="M29.5 14.7501V29.5001L39.3333 34.4167M54.0833 29.5001C54.0833 43.0771 43.077 54.0834 29.5 54.0834C15.923 54.0834 4.91663 43.0771 4.91663 29.5001C4.91663 15.9231 15.923 4.91675 29.5 4.91675C43.077 4.91675 54.0833 15.9231 54.0833 29.5001Z"
-                            stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                        d="M29.5 14.7501V29.5001L39.3333 34.4167M54.0833 29.5001C54.0833 43.0771 43.077 54.0834 29.5 54.0834C15.923 54.0834 4.91663 43.0771 4.91663 29.5001C4.91663 15.9231 15.923 4.91675 29.5 4.91675C43.077 4.91675 54.0833 15.9231 54.0833 29.5001Z"
+                        stroke="#0B4DE5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <h3>Organização Inteligente</h3>
                     <p>O aplicativo identifica e separa automaticamente fotos de caderno, lousa e documentos, deixando
@@ -156,9 +167,9 @@
                         <path
                             d="M12.2917 51.625C10.9396 51.625 9.77188 51.1538 8.78854 50.2115C7.84618 49.2281 7.375 48.0604 7.375 46.7083V12.2917C7.375 10.9396 7.84618 9.79236 8.78854 8.85C9.77188 7.86667 10.9396 7.375 12.2917 7.375H46.7083C48.0604 7.375 49.2076 7.86667 50.15 8.85C51.1333 9.79236 51.625 10.9396 51.625 12.2917V46.7083C51.625 48.0604 51.1333 49.2281 50.15 50.2115C49.2076 51.1538 48.0604 51.625 46.7083 51.625H12.2917ZM12.2917 46.7083H46.7083V12.2917H12.2917V46.7083ZM14.75 41.7917H44.25L35.0313 29.5L27.6563 39.3333L22.125 31.9583L14.75 41.7917ZM12.2917 46.7083V12.2917V46.7083Z"
                             fill="#0B4DE5" />
-                    </svg>
-                    <h3>Proatividade nos Estudos</h3>
-                    <p>Facilita encontrar conteúdos rapidamente, permitindo que você se concentre mais nos estudos e
+                        </svg>
+                        <h3>Proatividade nos Estudos</h3>
+                        <p>Facilita encontrar conteúdos rapidamente, permitindo que você se concentre mais nos estudos e
                         menos na busca por materiais.</p>
                 </div>
                 <div class="benefits-card">
