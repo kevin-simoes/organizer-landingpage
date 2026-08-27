@@ -56,3 +56,22 @@ button[type="submit"] {
 button[type="submit"]:hover {
     opacity: 0.9;
 }
+
+/* ===== Responsividade ===== */
+
+@media (max-width: 1024px) {
+    .form-content form {
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 640px) {
+    .form-content {
+        padding: var(--spacing-medium);
+    }
+
+    .form-content form {
+        max-width: 100%;
+        padding: var(--spacing-large) var(--spacing-medium);
+    }
+}

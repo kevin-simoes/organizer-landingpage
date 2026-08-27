@@ -14,40 +14,45 @@
 
 <body>
     <header>
-        <span>
-            <img src="src/assets/imgs/organizer_icon.png" alt="Organizer Icon" />
+        <div class="logo-group">
+            <img src="src/assets/imgs/organizer_icon.png" alt="Ícone do Organizer" />
             <h3>Organizer</h3>
-        </span>
-        <span>
-            <a href="#about">Sobre</a>
+        </div>
+        <nav class="nav-group" aria-label="Navegação principal">
+            <a href="#about">A Solução</a>
+            <a href="#target-audience">Público-Alvo</a>
             <a href="#benefits">Benefícios</a>
+            <a href="#gallery">Galeria</a>
             <a href="#tutorial">Como funciona</a>
-            <a href="#login-invite">Junte se a nós</a>
-        </span>
-        <span>
+            <a href="#team">Nossa Equipe</a>
+            <a href="#contact">Contato</a>
+        </nav>
+        <div class="cta-group">
             <a href="src/pages/form.html" class="button-link">Pré-cadastro</a>
-        </span>
+        </div>
     </header>
     <main class="main-content">
-        <main class="hero-content">
+        <section class="hero-content">
             <div class="hero-leftside">
                 <h1>Suas anotações <span class="highlight">Organizadas</span> com um clique!</h1>
                 <p>Capture fotos de lousas, folhas de caderno e anotações. Organizamos tudo automaticamente e encontra o
                     que você precisa em segundos.</p>
-                    <a href="#about">
-                    <button>Conhecer Mais
+                <a href="#about" class="hero-cta">
+                    Conhecer Mais
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-arrow-right-icon lucide-arrow-right">
                         <path d="M5 12h14" />
                         <path d="m12 5 7 7-7 7" />
                     </svg>
-                </button>
-            </a>
-            </div class="hero-rightside">
-            <img src="src/assets/imgs/hero_image.png" alt="Hero Image" />
-        </main>
-        <main class="about-content" id="about">
+                </a>
+            </div>
+            <div class="hero-rightside">
+                <img src="src/assets/imgs/hero_image.png" alt="Ilustração do aplicativo Organizer organizando anotações" />
+            </div>
+        </section>
+
+        <section class="about-content" id="about">
             <h2>Continue estudando sem imprevistos.</h2>
             <p>Com Organizer, agentes customizados organizarão suas fotos.</p>
             <div class="about-big-card">
@@ -136,8 +141,31 @@
                     <img src="src/assets/imgs/about-small-card-image.png" alt="About Big Card Image" />
                 </div>
             </div>
-        </main>
-        <main class="benefits-content" id="benefits">
+        </section>
+
+        <section class="target-audience-content" id="target-audience">
+            <h2>Feito para <span class="highlight">quem estuda e ensina.</span></h2>
+            <p>Conheça quem mais se beneficia do Organizer no dia a dia.</p>
+            <div class="target-audience-cards">
+                <div class="target-audience-card">
+                    <h3>Estudantes</h3>
+                    <p>Alunos do ensino médio, técnico e superior que fotografam lousas e anotações e perdem tempo
+                        procurando o material certo na hora de estudar para provas e trabalhos.</p>
+                </div>
+                <div class="target-audience-card">
+                    <h3>Professores</h3>
+                    <p>Educadores que precisam organizar materiais de aula, provas e referências por disciplina e
+                        turma, mantendo tudo acessível e bem categorizado.</p>
+                </div>
+                <div class="target-audience-card">
+                    <h3>Grupos de Estudo</h3>
+                    <p>Times de estudo que trocam fotos de anotações entre si e precisam de uma forma rápida de
+                        encontrar o conteúdo certo sem se perder em pastas desorganizadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits-content" id="benefits">
             <h2>Benefícios ao ser um <span class="highlight">Organizer.</span></h2>
 
             <div class="benefits-cards">
@@ -172,8 +200,28 @@
                         momento, em qualquer lugar.</p>
                 </div>
             </div>
-        </main>
-        <main class="tutorial-content" id="tutorial">
+        </section>
+
+        <section class="gallery-content" id="gallery">
+            <h2>Veja o <span class="highlight">Organizer</span> em ação</h2>
+            <p>Uma prévia visual da solução desenvolvida pela equipe.</p>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="src/assets/imgs/home.png" alt="Tela inicial do aplicativo Organizer" />
+                    <figcaption>Tela inicial</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="src/assets/imgs/folders.png" alt="Organização automática de fotos por categoria" />
+                    <figcaption>Organização automática</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="src/assets/imgs/notes.png" alt="Acesso às anotações organizadas" />
+                    <figcaption>Acesso às anotações</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="tutorial-content" id="tutorial">
             <h2>Como funciona o <span class="highlight">Organizer</span></h2>
             <div class="tutorial-cards">
                 <div class="tutorial-card">
@@ -198,7 +246,6 @@
                             desse contexto para identificar quais fotos deverá organizar para cada pasta, conforme a
                             preferência do usuário.</p>
                     </div>
-                    <!-- <img src="src/assets/imgs/organizer_icon.png" /> -->
                 </div>
                 <div class="tutorial-card">
                     <div>
@@ -212,21 +259,79 @@
                             estudo/trabalho, por conta disso o aplicativo separa as fotos por temas, sendo ajustável
                             para atender as necessidades do usuário.</p>
                     </div>
-                    <img src="src/assets/imgs/tutorial-image.png" />
+                    <img src="src/assets/imgs/tutorial-image.png" alt="Ilustração da organização por temas no Organizer" />
                 </div>
             </div>
-        </main>
-        <main class="login-invite" id="login-invite">
+        </section>
+
+        <section class="team-content" id="team">
+            <h2>Conheça a <span class="highlight">equipe IRIS</span></h2>
+            <p>As pessoas responsáveis por desenvolver essa solução.</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <h3>Flávia Camerim de Sousa</h3>
+                    <span class="team-role">Back-End</span>
+                </div>
+                <div class="team-card">
+                    <h3>João Pedro Nóbrega Pereira</h3>
+                    <span class="team-role">Front-End</span>
+                </div>
+                <div class="team-card">
+                    <h3>Kevin Simões de Souza Lima</h3>
+                    <span class="team-role">Front-End</span>
+                </div>
+                <div class="team-card">
+                    <h3>Luan Sá Muniz dos Santos</h3>
+                    <span class="team-role">Back-End</span>
+                </div>
+                <div class="team-card">
+                    <h3>Manuella Sousa Thomazini</h3>
+                    <span class="team-role">Back-End</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="login-invite" id="login-invite">
             <div class="login-invite-content">
-                <img src="src/assets/imgs/organizer_icon.png" />
+                <img src="src/assets/imgs/organizer_icon.png" alt="Ícone do Organizer" />
                 <h2>Pronto para organizar suas anotações?</h2>
                 <p>Faça o login na landing page do Organizer para ser informado quando o aplicativo ficar disponível.</p>
-                <a href="src/pages/form.html"><button class="button-link">Registrar</button></a>
+                <a href="src/pages/form.html" class="button-link">Registrar</a>
             </div>
-        </main>
+        </section>
+
+        <section class="contact-content" id="contact">
+            <h2>Fale com a <span class="highlight">nossa equipe</span></h2>
+            <p>Dúvidas, sugestões ou interesse no projeto? Fale com a gente.</p>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <h3>E-mail</h3>
+                        <p><a href="mailto:contato@organizer.com">contato@organizer.com</a></p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h3>Redes Sociais</h3>
+                        <p>
+                            <a href="#" target="_blank" rel="noopener">Instagram</a> ·
+                            <a href="#" target="_blank" rel="noopener">LinkedIn</a> ·
+                            <a href="https://github.com/kevin-simoes/organizer-landingpage" target="_blank" rel="noopener">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+                <form class="contact-form" action="#" method="post">
+                    <label for="contact-name">Nome</label>
+                    <input type="text" id="contact-name" name="name" placeholder="Seu nome" required />
+                    <label for="contact-email">E-mail</label>
+                    <input type="email" id="contact-email" name="email" placeholder="seu@email.com" required />
+                    <label for="contact-message">Mensagem</label>
+                    <textarea id="contact-message" name="message" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+                    <button type="submit">Enviar mensagem</button>
+                </form>
+            </div>
+        </section>
     </main>
     <footer>
-        @2026 IRIS. Todos os direitos reservados.
+        <p>&copy; 2026 IRIS. Todos os direitos reservados.</p>
     </footer>
 </body>
 

@@ -10,6 +10,7 @@
     flex-direction: row;
     padding-inline: 5rem;
     justify-content: space-between;
+    align-items: center;
     gap: var(--spacing-medium);
     animation-duration: 2s;
     animation-name: aparecer;
@@ -23,13 +24,18 @@
     gap: var(--spacing-medium);
 }
 
+.hero-rightside {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes aparecer {
     0% { opacity: 0 }
     100% { opacity: 1 }
 }
 
-
-.hero-leftside button {
+.hero-cta {
     background-color: transparent;
     border-radius: 100px;
     border: 1px solid var(--primary-color);
@@ -43,16 +49,16 @@
     cursor: pointer;
 }
 
-.hero-leftside button:hover {
+.hero-cta:hover {
     background-color: var(--primary-color);
     color: var(--background-color);
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-.hero-leftside button:focus {
+.hero-cta:focus {
     background-color: var(--primary-color);
     color: var(--background-color);
-    outline: none;  
+    outline: none;
 }
 
 .highlight {
@@ -67,6 +73,7 @@
     align-items: center;
     gap: var(--spacing-medium);
     padding-inline: var(--spacing-large);
+    text-align: center;
 }
 
 .about-big-card {
@@ -78,6 +85,7 @@
     border-radius: var(--border-radius);
     border: 1.5px solid var(--card-border-color1);
     width: 60%;
+    text-align: left;
 }
 
 .about-big-card:hover {
@@ -99,13 +107,14 @@
 }
 
 .about-small-cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
     width: 60%;
+    text-align: left;
 }
 
 .about-small-card {
-    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,6 +141,42 @@
     padding: 16px 0px 0px 16px;
 }
 
+/*Estilo do público-alvo*/
+
+.target-audience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding-inline: var(--spacing-large);
+    text-align: center;
+}
+
+.target-audience-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-medium);
+    width: 80%;
+}
+
+.target-audience-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    text-align: left;
+    background-color: var(--card-color1);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--card-border-color1);
+}
+
+.target-audience-card:hover {
+    background-color: var(--card-color2);
+    border-color: var(--card-border-color2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 /*Estilo do benefits*/
 
 .benefits-content {
@@ -141,19 +186,21 @@
     gap: var(--spacing-medium);
     padding: var(--spacing-large);
     background-color: var(--card-color1);
+    text-align: center;
 }
 
 .benefits-cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: var(--spacing-medium);
     width: 80%;
 }
 
 .benefits-card {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: var(--spacing-medium);
     background-color: var(--background-color);
     padding: var(--spacing-medium);
@@ -168,6 +215,50 @@
     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/*Estilo da galeria*/
+
+.gallery-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-large);
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-medium);
+    width: 50%;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    background-color: var(--card-color1);
+    border: 1.5px solid var(--card-border-color1);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-small);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: calc(var(--border-radius) - 8px);
+}
+
+.gallery-item figcaption {
+    font-family: var(--font-secondary);
+    color: #555555;
+    font-size: 0.9rem;
+}
+
+.gallery-note {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
 /*Estilo do tutorial*/
 
 .tutorial-content {
@@ -176,28 +267,29 @@
     align-items: center;
     gap: var(--spacing-medium);
     padding: var(--spacing-large);
+    text-align: center;
 }
 
 .tutorial-cards {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: var(--spacing-medium);
     width: 60%;
 }
 
 .tutorial-card {
     display: flex;
-    flex: 1;
     background-color: var(--card-color2);
     padding: var(--spacing-medium);
     border-radius: var(--border-radius);
     border: 1.5px solid var(--card-border-color2);
+    text-align: left;
 }
 
 .tutorial-card div {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     width: fit-content;
     gap: var(--spacing-medium);
 }
@@ -207,9 +299,7 @@
 }
 
 .tutorial-card:nth-child(2) {
-    display: flex;
     flex-direction: row-reverse;
-    flex: 1;
     background-color: var(--card-color1);
     padding: 16px 16px 0px 16px;
     border-radius: var(--border-radius);
@@ -217,16 +307,59 @@
 }
 
 .tutorial-card:nth-child(2) div {
-    display: flex;
-    flex-direction: column;
     align-items: flex-end;
     text-align: end;
-    width: fit-content;
-    gap: var(--spacing-medium);
 }
 
 .tutorial-card:nth-child(2) img {
     width: 197px;
+}
+
+/*Estilo da equipe*/
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-large);
+    background-color: var(--card-color1);
+    text-align: center;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-medium);
+    width: 90%;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+    background-color: var(--background-color);
+    padding: var(--spacing-medium);
+    border-radius: var(--border-radius);
+    border: 1.5px solid var(--card-border-color1);
+}
+
+.team-card:hover {
+    background-color: var(--card-color2);
+    border-color: var(--card-border-color2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-role {
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.team-rm {
+    font-size: 0.9rem;
 }
 
 /*Estilo do convite a login*/
@@ -240,7 +373,7 @@
     background: linear-gradient(47deg, rgba(35, 47, 75, 1) 0%, rgb(38, 103, 255) 100%);
 }
 
-.login-invite div {
+.login-invite-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,14 +381,50 @@
     text-align: center;
     gap: var(--spacing-medium);
     width: 45%;
+}
 
-    h2,p {
-        color: var(--background-color);
-    }
+.login-invite-content h2,
+.login-invite-content p {
+    color: var(--background-color);
 }
 
 .login-invite img {
     width: 150px;
+}
+
+/*Estilo do contato*/
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-medium);
+    padding: var(--spacing-large);
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-large);
+    width: 80%;
+    align-items: start;
+    text-align: left;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-medium);
+}
+
+.contact-info-item a {
+    color: var(--primary-color);
+}
+
+.contact-content form {
+    max-width: 100%;
+    padding: var(--spacing-large);
 }
 
 /*Estilo do footer*/
@@ -268,4 +437,159 @@ footer {
     padding: var(--spacing-large);
     background-color: var(--secondary-color);
     color: var(--background-color);
+}
+
+footer p {
+    color: var(--background-color);
+}
+
+/* ================================
+   Responsividade: Tablet e Mobile
+   ================================ */
+
+@media (max-width: 1024px) {
+    .hero-content {
+        padding-inline: var(--spacing-large);
+    }
+
+    .about-big-card {
+        width: 85%;
+    }
+
+    .about-small-cards {
+        width: 85%;
+    }
+
+    .target-audience-cards {
+        width: 90%;
+    }
+
+    .benefits-cards {
+        width: 90%;
+    }
+
+    .gallery-grid {
+        width: 90%;
+    }
+
+    .tutorial-cards {
+        width: 85%;
+    }
+
+    .team-grid {
+        width: 95%;
+    }
+
+    .contact-grid {
+        width: 90%;
+    }
+
+    .login-invite-content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-content {
+        gap: 3rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        padding-inline: var(--spacing-large);
+        text-align: center;
+    }
+
+    .hero-leftside {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-big-card {
+        flex-direction: column;
+        width: 100%;
+        padding: var(--spacing-medium);
+    }
+
+    .about-big-card img {
+        width: 100%;
+    }
+
+    .about-small-cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .about-small-card:nth-child(2) {
+        flex-direction: column;
+        padding: var(--spacing-medium);
+    }
+
+    .target-audience-cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .benefits-cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .tutorial-cards {
+        width: 100%;
+    }
+
+    .tutorial-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tutorial-card div {
+        align-items: center;
+        width: 100%;
+    }
+
+    .tutorial-card img {
+        width: 100%;
+    }
+
+    .tutorial-card:nth-child(2) {
+        flex-direction: column;
+        padding: var(--spacing-medium);
+    }
+
+    .tutorial-card:nth-child(2) div {
+        align-items: center;
+        text-align: center;
+    }
+
+    .tutorial-card:nth-child(2) img {
+        width: 100%;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .login-invite-content {
+        width: 100%;
+    }
+
+    .contact-grid {
+        width: 100%;
+    }
 }

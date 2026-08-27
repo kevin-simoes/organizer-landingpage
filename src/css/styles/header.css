@@ -5,18 +5,20 @@ header {
     padding: var(--spacing-small);
 }
 
-header span {
+header .logo-group,
+header .nav-group,
+header .cta-group {
     display: flex;
     gap: var(--spacing-medium);
     align-items: center;
 }
 
-header span a:hover {
+header a:hover {
     color: var(--primary-color);
     transition: color 0.3s;
 }
 
-header span a:focus {
+header a:focus {
     color: var(--primary-color);
     outline: none;
 }
@@ -45,4 +47,31 @@ header img {
 .button-link:focus {
     background-color: var(--card-border-color2);
     color: var(--background-color);
+}
+
+/* ===== Responsividade ===== */
+
+@media (max-width: 1024px) {
+    header .nav-group {
+        gap: var(--spacing-small);
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    header {
+        flex-direction: column;
+        gap: var(--spacing-small);
+    }
+
+    header .nav-group {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header .cta-group {
+        order: 2;
+    }
 }
